@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:768px)" href="styles_large.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width:768px)" href="styles_small.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>New Puchatek</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="page-header container-fluid" id="header">
+        <img src="img/logo.png">
+        <h1 id="title">Kebab, pizza, zapiekanki</h1>
+      </div>
+      <div class="container-fluid" id="menu">
+        <div class="row justify-content-center">
+          <div class="col menuItem"><a href="index.html">Witamy</a></div>
+          <div class="col menuItem"><a href="menu.html">Menu</a></div>
+          <div class="col menuItem"><a href=#>Galeria</a></div>
+          <div class="col menuItem"><a href="lokale.html">Lokale</a></div>
+        </div>
+      </div>
+      <div id="mainTable" class="container-fluid">
+        <div class="row">
+          <div class="col-2 column">
+          </div>
+          <div class="col-8 column" id="content">
+            <div class="card mapsCard">
+              <div class="bar">
+                <h1>Chrzanów</h1>
+
+                <div class="row">
+                  <div class="col">
+                    <p>ul. Dobczycka</p>
+                    <p>tel. 32 753 97 18</p>
+                    <h4>Godziny otwarcia:</h4>
+                    <p>Poniedziałek - sobota: 9:00 - 20:00</p>
+                    <p>Niedziela i święta: 10:00 - 20:00</p>
+                  </div>
+                  <div class="col">
+                    <p>ul. Sikorskiego 1B</p>
+                    <p>tel. 32 754 11 11</p>
+                    <h4>Godziny otwarcia:</h4>
+                    <p>Poniedziałek - sobota: 9:00 - 22:00</p>
+                    <p>Niedziela i święta: 10:00 - 22:00</p>
+                  </div>
+                </div>
+                <div class="map" id="map1"></div>
+              </div>
+              <div class="bar">
+                <h1>Trzebinia</h1>
+
+                <div class="row">
+                  <div class="col">
+                    <p>ul. Rynek 3A</p>
+                    <p>tel. 32 753 89 99</p>
+                    <h4>Godziny otwarcia:</h4>
+                    <p>Poniedziałek - sobota: 9:00 - 22:00</p>
+                    <p>Niedziela i święta: 10:00 - 22:00</p>
+                  </div>
+                </div>
+                <div class="map" id="map2"></div>
+              </div>
+            </div>
+            <script>
+              function initMap() {
+
+                var bars = [[
+                  {title: "Puchatek ul. Sikorskiego 1B", lat: 50.143840, lng: 19.414208},
+                  {title: "Puchatek ul. Dobczycka", lat: 50.142202, lng: 19.403747}
+                ], [
+                  {title: "Puchatek ul. Rynek 3A", lat: 50.159238, lng: 19.471294}
+                ]
+                ];
+
+                var maps = [
+                  new google.maps.Map(document.getElementById('map1'), {
+                    zoom: 5,
+                    maxZoom: 18
+                  }),
+                  new google.maps.Map(document.getElementById('map2'), {
+                    zoom: 15,
+                    maxZoom: 18
+                  })
+                ];
+
+                for(a = 0; a < bars.length; a++){
+                  var bounds = new google.maps.LatLngBounds();
+                  for( i = 0; i < bars[a].length; i++)
+                  {
+                    var position = new google.maps.LatLng(bars[a][i].lat, bars[a][i].lng);
+                    bounds.extend(position);
+                    var marker = new google.maps.Marker({
+                      position: position,
+                      map: maps[a],
+                      title: bars[a][i][0]
+                    });
+                      maps[a].fitBounds(bounds);
+
+                  }
+                }
+              }
+            </script>
+            <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeI9E5irOTPZXXWIU6FEDYQulAW6GHR-Y&callback=initMap">
+            </script>
+          </div>
+          <div class="col-2 column sidebar">
+            <img src="img/sidebar/str02.png">
+            <img src="img/sidebar/str03.png">
+            <img src="img/sidebar/str04.png">
+            <img src="img/sidebar/str05.png">
+            <img src="img/sidebar/zestaw_dzieciecy01.png">
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">Copyright 2017 Michał Mostowik</div>
+    </div>
+  </body>
+
+
+
+</html>

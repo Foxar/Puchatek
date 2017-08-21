@@ -3,6 +3,8 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:768px)" href="styles_large.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width:768px)" href="styles_small.css">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,77 +19,127 @@
       </div>
       <div class="container-fluid" id="menu">
         <div class="row justify-content-center">
-          <div class="col menuItem"><a href="index.html">Strona główna</a></div>
+          <div class="col menuItem"><a href="index.html">Witamy</a></div>
           <div class="col menuItem"><a href="menu.html">Menu</a></div>
           <div class="col menuItem"><a href="galeria.html">Galeria</a></div>
-          <div class="col menuItem"><a href="kontakt.html">Kontakt</a></div>
+          <div class="col menuItem"><a href="lokale.html">Lokale</a></div>
         </div>
       </div>
       <div id="mainTable" class="container-fluid">
         <div class="row">
-          <div class="col-2">
+          <div class="col-2 column">
           </div>
-          <div class="col-8" id="content">
+          <div class="col-8 column" id="content">
             <div class="card foodMenu container">
               <div><h3 class="foodTitle">Pizza</h3></div>
               <ol>
-                <div class="row"><div class="col-8"></div><div class="col">Średnia</div><div class="col">Duża</div><div class="col">Mega</div><div class="col">Party</div></div>
-                <li><div class="row"><div class="col-8">Margherita</div><div class="col">13,50</div><div class="col">19,00</div><div class="col">25,00</div><div class="col">33,00</div></div></li>
+                <div class="row no-gutters"><div class="col-4"></div><div class="col-2">Średnia</div><div class="col-2">Duża</div><div class="col-2">Mega</div><div class="col-2">Party</div></div>
+                <li><div class="row no-gutters"><div class="col-4">Margherita</div><div class="col-2">13,50</div><div class="col-2">19,00</div><div class="col-2">25,00</div><div class="col-2">33,00</div></div></li>
                 <p>(sos, ser)</p>
-                <li><div class="row"><div class="col-8">Funghi</div><div class="col">15,50</div><div class="col">22,00</div><div class="col">30,00</div><div class="col">38,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Funghi</div><div class="col-2">15,50</div><div class="col-2">22,00</div><div class="col-2">30,00</div><div class="col-2">38,00</div></div></li>
                 <p>(sos. ser, pieczarki, cebula)</p>
-                <li><div class="row"><div class="col-8">Amore</div><div class="col">17,50</div><div class="col">24,00</div><div class="col">30,50</div><div class="col">38,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Amore</div><div class="col-2">17,50</div><div class="col-2">24,00</div><div class="col-2">30,50</div><div class="col-2">38,50</div></div></li>
                 <p>(sos, ser, pieczarki, salami, pomidor)</p>
-                <li><div class="row"><div class="col-8">Hawana</div><div class="col">18,50</div><div class="col">25,50</div><div class="col">33,00</div><div class="col">41,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Hawana</div><div class="col-2">18,50</div><div class="col-2">25,50</div><div class="col-2">33,00</div><div class="col-2">41,00</div></div></li>
                 <p>(sos, ser, szynka, ananas, kukurydza, groszek)</p>
-                <li><div class="row"><div class="col-8">Crostina</div><div class="col">18,50</div><div class="col">25,00</div><div class="col">33,00</div><div class="col">41,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Crostina</div><div class="col-2">18,50</div><div class="col-2">25,00</div><div class="col-2">33,00</div><div class="col-2">41,00</div></div></li>
                 <p>(sos, ser, szynka, pieczarki, cebula)</p>
-                <li><div class="row"><div class="col-8">Tunfish</div><div class="col">18,50</div><div class="col">27,00</div><div class="col">34,00</div><div class="col">42,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Tunfish</div><div class="col-2">18,50</div><div class="col-2">27,00</div><div class="col-2">34,00</div><div class="col-2">42,00</div></div></li>
                 <p>(sos, ser, kapary, peperoni, tuńczyk, cebula, kukurydza)</p>
-                <li><div class="row"><div class="col-8">Chicken</div><div class="col">18,50</div><div class="col">27,00</div><div class="col">34,00</div><div class="col">42,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Chicken</div><div class="col-2">18,50</div><div class="col-2">27,00</div><div class="col-2">34,00</div><div class="col-2">42,00</div></div></li>
                 <p>(sos, ser, czosnek, kurczak curry, pomidor, groszek)</p>
-                <li><div class="row"><div class="col-8">Peperoni</div><div class="col">18,50</div><div class="col">26,50</div><div class="col">35,00</div><div class="col">43,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Peperoni</div><div class="col-2">18,50</div><div class="col-2">26,50</div><div class="col-2">35,00</div><div class="col-2">43,00</div></div></li>
                 <p>(sos, ser, szynka, pomidor, papryka peperoni, oliwki, chili)</p>
-                <li><div class="row"><div class="col-8">Serowa uczta</div><div class="col">18,50</div><div class="col">27,00</div><div class="col">33,00</div><div class="col">41,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Serowa uczta</div><div class="col-2">18,50</div><div class="col-2">27,00</div><div class="col-2">33,00</div><div class="col-2">41,00</div></div></li>
                 <p>(sos, ser, mozzarella, pleśniowy, gouda, wędzony)</p>
-                <li><div class="row"><div class="col-8">Vegetariana</div><div class="col">18,50</div><div class="col">26,50</div><div class="col">34,00</div><div class="col">42,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Vegetariana</div><div class="col-2">18,50</div><div class="col-2">26,50</div><div class="col-2">34,00</div><div class="col-2">42,00</div></div></li>
                 <p>(sos, ser, brokuły, szpinak, pieczarki, papryka, cebula)</p>
-                <li><div class="row"><div class="col-8">Boruta</div><div class="col">19,50</div><div class="col">26,00</div><div class="col">34,00</div><div class="col">42,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Boruta</div><div class="col-2">19,50</div><div class="col-2">26,00</div><div class="col-2">34,00</div><div class="col-2">42,00</div></div></li>
                 <p>(sos, ser, salami, boczek, cebula, chili, czosnek, tabasko)</p>
-                <li><div class="row"><div class="col-8">Regina</div><div class="col">20,00</div><div class="col">26,50</div><div class="col">34,00</div><div class="col">42,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Regina</div><div class="col-2">20,00</div><div class="col-2">26,50</div><div class="col-2">34,00</div><div class="col-2">42,00</div></div></li>
                 <p>(sos, ser, pieczarki, brokuły, boczek, cebula)</p>
-                <li><div class="row"><div class="col-8">Kebab pizza</div><div class="col">20,00</div><div class="col">27,00</div><div class="col">34,50</div><div class="col">42,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Kebab pizza</div><div class="col-2">20,00</div><div class="col-2">27,00</div><div class="col-2">34,50</div><div class="col-2">42,50</div></div></li>
                 <p>(sos, ser, kebab, ogórek kiszony, chili, pomidor, cebula, czosnek)</p>
-                <li><div class="row"><div class="col-8">Mexicana</div><div class="col">20,00</div><div class="col">27,50</div><div class="col">34,50</div><div class="col">42,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Mexicana</div><div class="col-2">20,00</div><div class="col-2">27,50</div><div class="col-2">34,50</div><div class="col-2">42,50</div></div></li>
                 <p>(sos, ser, kebab, kukurydza, papryka, cebula, chili, fasola czerwona)</p>
-                <li><div class="row"><div class="col-8">Etna</div><div class="col">20,00</div><div class="col">28,50</div><div class="col">35,00</div><div class="col">43,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Etna</div><div class="col-2">20,00</div><div class="col-2">28,50</div><div class="col-2">35,00</div><div class="col-2">43,00</div></div></li>
                 <p>(sos, ser, kiełbasa, boczek, cebula, groszek)</p>
-                <li><div class="row"><div class="col-8">Verona</div><div class="col">20,00</div><div class="col">28,50</div><div class="col">36,00</div><div class="col">44,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Verona</div><div class="col-2">20,00</div><div class="col-2">28,50</div><div class="col-2">36,00</div><div class="col-2">44,00</div></div></li>
                 <p>(sos, ser, szynka, salami, cebula)</p>
-                <li><div class="row"><div class="col-8">Florencja</div><div class="col">20,50</div><div class="col">29,50</div><div class="col">37,00</div><div class="col">45,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Florencja</div><div class="col-2">20,50</div><div class="col-2">29,50</div><div class="col-2">37,00</div><div class="col-2">45,00</div></div></li>
                 <p>(sos, ser, czosnek, szpinak)</p>
-                <li><div class="row"><div class="col-8">Wiejska</div><div class="col">22,50</div><div class="col">30,50</div><div class="col">38,00</div><div class="col">46,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Wiejska</div><div class="col-2">22,50</div><div class="col-2">30,50</div><div class="col-2">38,00</div><div class="col-2">46,00</div></div></li>
                 <p>(sos, ser, kiełbasa, cebula, boczek, ogórki kiszone, czosnek)</p>
-                <li><div class="row"><div class="col-8">Frutti di mare</div><div class="col">22,50</div><div class="col">29,50</div><div class="col">37,00</div><div class="col">45,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Frutti di mare</div><div class="col-2">22,50</div><div class="col-2">29,50</div><div class="col-2">37,00</div><div class="col-2">45,00</div></div></li>
                 <p>(sos, ser, krewetki, małże, kalamary, ośmiorniczki, cebula, oliwki, czosnek, papryka)</p>
-                <li><div class="row"><div class="col-8">Roma</div><div class="col">22,50</div><div class="col">29,50</div><div class="col">38,00</div><div class="col">46,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Roma</div><div class="col-2">22,50</div><div class="col-2">29,50</div><div class="col-2">38,00</div><div class="col-2">46,00</div></div></li>
                 <p>(sos, ser, szynka, kurczak curry, papryka, cebula, pieczarki, oliwki, kukurydza)</p>
-                <li><div class="row"><div class="col-8">Romulus</div><div class="col">22,50</div><div class="col">29,50</div><div class="col">37,00</div><div class="col">45,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Romulus</div><div class="col-2">22,50</div><div class="col-2">29,50</div><div class="col-2">37,00</div><div class="col-2">45,00</div></div></li>
                 <p>(sos, ser, szynka, pieczarki, papryka, brokuły, kukurydza, groszek)</p>
-                <li><div class="row"><div class="col-8">Firmowa</div><div class="col">25,00</div><div class="col">31,50</div><div class="col">37,00</div><div class="col">45,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Firmowa</div><div class="col-2">25,00</div><div class="col-2">31,50</div><div class="col-2">37,00</div><div class="col-2">45,00</div></div></li>
                 <p>(sos, ser, kiełbasa, szynka, boczek, pieczarki, papryka, cebula, czosnek)</p>
-                <li><div class="row"><div class="col-8">Vampiro</div><div class="col">25,50</div><div class="col">32,00</div><div class="col">39,00</div><div class="col">47,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Vampiro</div><div class="col-2">25,50</div><div class="col-2">32,00</div><div class="col-2">39,00</div><div class="col-2">47,00</div></div></li>
                 <p>(sos, ser, szynka, salami, boczek, papryka, czosnek, chili, cebula, papryka peperoni)</p>
-                <li><div class="row"><div class="col-8">Rocki</div><div class="col">18,00</div><div class="col">26,50</div><div class="col">34,00</div><div class="col">47,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Rocki</div><div class="col-2">18,00</div><div class="col-2">26,50</div><div class="col-2">34,00</div><div class="col-2">47,00</div></div></li>
                 <p>(sos, ser, szynka, salami, boczek, pieczarki, cebula, pomidor)</p>
-                <li><div class="row"><div class="col-8">Grecka</div><div class="col">18,00</div><div class="col">26,50</div><div class="col">36,00</div><div class="col">42,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Grecka</div><div class="col-2">18,00</div><div class="col-2">26,50</div><div class="col-2">36,00</div><div class="col-2">42,00</div></div></li>
                 <p>(sos, ser, cebula, pomidor, feta, oliwki)</p>
-                <li><div class="row"><div class="col-8">Amerykańska</div><div class="col">20,00</div><div class="col">28,50</div><div class="col">36,00</div><div class="col">44,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-4">Amerykańska</div><div class="col-2">20,00</div><div class="col-2">28,50</div><div class="col-2">36,00</div><div class="col-2">44,00</div></div></li>
                 <p>(sos, ser, hamburger, boczek, szynka)</p>
               </ol>
             </div>
+
+            <div class="card foodMenu container">
+              <div><h3 class="foodTitle">Menu</h3></div>
+              <ul>
+                <li><div class="row no-gutters"><div class="col-9">Kebab duży (mięso, sałatka, sos)</div><div class="col-3">11,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Kebab mały (mięso, sałatka, sos)</div><div class="col-3">8,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Lahmacun (mięso, sałatka, sos)</div><div class="col-3">12,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Lahmacun wegetariański (sałatka, sos)</div><div class="col-3">8,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Lahmacun (mięso, frytki, sos)</div><div class="col-3">13,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Lahmacun (frytki, sałatka, sos)</div><div class="col-3">9,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Kebab pieróg (mięso, ogórek, cebula, ser)</div><div class="col-3">11,00</div></div></li>
+
+                <li><div class="row no-gutters"><div class="col-9">Zestaw duży (mięso, frytki, sałatka)</div><div class="col-3">17,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Zestaw mały (mięso, frytki, sałatka)</div><div class="col-3">16,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Kubełek kebab FULL (frytki, mięso, sałatka, sos)</div><div class="col-3">16,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Kubełek kebab (frytki, mięso, sos)</div><div class="col-3">11,00</div></div></li>
+
+                <li><div class="row no-gutters"><div class="col-9">Knysza z hamburgerem</div><div class="col-3">7,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Knysza z parówką</div><div class="col-3">7,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Knysza z serem</div><div class="col-3">7,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Knysza z warzywami</div><div class="col-3">6,00</div></div></li>
+
+                <li><div class="row no-gutters"><div class="col-9">Zapiekanka z keczupem</div><div class="col-3">4,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Zapiekanka Extra</div><div class="col-3">4,80</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Zapiekanka z kebabem</div><div class="col-3">7,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Zapiekanka z salami</div><div class="col-3">7,00</div></div></li>
+
+                <li><div class="row no-gutters"><div class="col-9">Hamburger w oryginalnej bułce</div><div class="col-3">5,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Hamburger DUET (dwa mięsa)</div><div class="col-3">7,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Cheeseburger w oryginalnej bułce</div><div class="col-3">6,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Cheeseburger DUET (dwa mięsa)</div><div class="col-3">8,50</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Hot dog w oryginalnej bułce</div><div class="col-3">5,50</div></div></li>
+
+                <li><div class="row no-gutters"><div class="col-9">Frytki małe</div><div class="col-3">3,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Frytki duże</div><div class="col-3">5,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Placki ziemniaczane (2 szt)</div><div class="col-3">4,50</div></div></li>
+
+                <li><div class="row no-gutters"><div class="col-9">Sałatka mieszana</div><div class="col-3">6,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Sałatka z kurczakiem + pieczywo czosnkowe</div><div class="col-3">8,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Sałatka z tuńczykeim + pieczywo czosnkowe</div><div class="col-3">8,00</div></div></li>
+                <li><div class="row no-gutters"><div class="col-9">Sałatka grecka + pieczywo czosnkowe</div><div class="col-3">8,00</div></div></li>
+
+                <h2>Dania z kurczakiem</h2>
+
+                <li><div class="row no-gutters"><div class="col-4">Amerykańska</div><div class="col-2">20,00</div><div class="col-2">28,50</div><div class="col-2">36,00</div><div class="col-2">44,00</div></div></li>
+                <p>(sos, ser, hamburger, boczek, szynka)</p>
+
+              </ul>
+            </div>
+
           </div>
-          <div class="col-2 sidebar">
+          <div class="col-2 sidebar column">
             <img src="img/sidebar/str02.png">
             <img src="img/sidebar/str03.png">
             <img src="img/sidebar/str04.png">

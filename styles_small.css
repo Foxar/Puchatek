@@ -1,40 +1,13 @@
-body {
-  background-image: url("img/backgrounds/381504.jpg");
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: red;
-
-
-}
-
-#main {
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#header {
-  text-align: center;
-
-}
-.col {
-
-}
-
-/*This is to fix the "row is bigger than it's fluid parent container" issue i was having. Limits rows to 99% of the viewport.*/
-.row {
-  max-width: 99vw;
+.mapsCard{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 80%;
 }
 
 .foodMenu {
-  padding: 0;
-
-}
-
-.foodTitle {
-  background-color: #F8C300;
-  margin: 5vh 0;
-  padding: 10px 0;
+  width: 90%;
+  font-size: 70%;
+  text-align: center;
 }
 
 .foodMenu p {
@@ -42,7 +15,7 @@ body {
 }
 .foodMenu li {
   margin: 8px 0 5px 0;
-  background-color: #CCC;
+  background-color: #EEE;
   border-radius: 2px;
   padding-left: 5px;
 }
@@ -50,65 +23,73 @@ body {
 .foodMenu ol {
   display: block;
   text-align: left;
-  margin: 0 15px;
+  margin: 0 5px;
+  padding-left: 14px;
 }
 
-#header img {
-  margin: 25px 0;
+.mapsCard p {
+  font-size: 80%;
 }
 
-#content img {
-  width: 40%;
+.mapsCard h1{
+  font-size: 150%;
+}
+
+.mapsCard h4{
+  font-size: 100%;
+}
+
+.foodImage {
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.foodImage .desc p {
+  display: none;
+}
+
+.foodImage .desc {
   height: auto;
 }
 
-#content {
-
+.column:not(#content) {
+  width: 0;
+  display: none;
 }
 
-.container-fluid {
+#mainTable .column {
   padding: 0;
 }
 
-#menu {
-  text-align: center;
-  width: 100%;
-  background-color: #F8C300;
-  margin-bottom: 5vh;
+#mainTable .row {
+  margin: 0;
 }
 
-.menuItem {
-  font-size: 1.2em;
-}
-
-.menuItem:hover {
-  background-color: #c09300;
-  transition: 350ms;
-  cursor: pointer;
-}
-
-.menuItem a {
-  text-decoration: none;
-  color: black;
+#content {
+  max-width: none;
+  width: 100vw;
   display: block;
-  margin: 1vh 0;
+  position: static;
+  flex-basis: 100%;
 }
 
-#title {
-  border-top: 2px solid #E31E24;
-  background-color: #E31E24;
-  color: white;
-  padding: 15px 0;
-  margin: 0;
+#mainTable .container{
+  padding: 0;
 }
 
-#mainTable {
-  text-align: center;
-  margin: 0;
+.foodImage h3 {
+  font-size: 100%;
+
 }
 
-.sidebar {
-  text-align: right;
+#header img {
+  height: 20vh;
+  width: auto;
+  margin: 2vh 0;
+}
+
+#menu {
+  font-size: 1em;
 }
 
 .sidebar img {
@@ -116,11 +97,6 @@ body {
   height: auto;
 }
 
-#footer
-{
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-  margin-top: 2vh;
-  text-align: center;
-  border-top: 2px solid rgba(0,0,0,0.5);
+body {
+  background-size: auto 100%;
 }

@@ -1,0 +1,201 @@
+body {
+  background-image: url("img/backgrounds/381504.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: red;
+
+
+}
+
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#main {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#header {
+  text-align: center;
+
+}
+.col {
+
+}
+
+.card {
+  box-shadow: 2px 2px 10px;
+}
+
+/*This is to fix the "row is bigger than it's fluid parent container" issue i was having. Limits rows to 99% of the viewport.*/
+.row {
+  max-width: 99vw;
+}
+
+.foodMenu {
+  padding: 10px 0;
+  margin: 5vh 0;
+}
+
+.foodMenu li{
+  list-style: none;
+}
+
+.foodTitle {
+  background-color: #F8C300;
+  margin: 5vh 0;
+  padding: 10px 0;
+}
+
+.foodMenu p {
+  margin: 0;
+}
+.foodMenu li {
+  margin: 8px 0 5px 0;
+  background-color: #EEE;
+  border-radius: 2px;
+  padding-left: 5px;
+}
+
+.foodMenu ol {
+  display: block;
+  text-align: left;
+  margin: 0 15px;
+}
+
+#header img {
+  height: 20vh;
+  width: auto;
+  margin: 25px 0;
+}
+
+
+
+.container-fluid {
+  padding: 0;
+}
+
+#menu {
+  text-align: center;
+  width: 100%;
+  background-color: #F8C300;
+  margin-bottom: 5vh;
+  box-shadow: 0 5px 15px;
+  font-size: 1.4em;
+}
+
+#menu .row {
+  margin: 0 auto;
+}
+
+.menuItem {
+  font-size: 1em;
+
+}
+
+
+.foodImage h3{
+  margin: 0;
+}
+
+.foodImage {
+  vertical-align: top;
+  margin: 1vh 0;
+  width: 40%;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 3vh;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bar {
+  margin: 3vh 0;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.map {
+  width: 100%;
+  height: 60vh;
+  margin: 2vh auto;
+}
+
+.barLocation {
+
+}
+
+.foodImage .desc {
+
+}
+
+.foodImage p {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.foodImage img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+
+}
+
+.menuItem:hover {
+
+  transition: 350ms;
+  cursor: pointer;
+}
+
+.menuItem a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 1vh 0;
+}
+
+#title {
+  border-top: 2px solid #E31E24;
+  background-color: #E31E24;
+  color: white;
+  padding: 15px 0;
+  margin: 0;
+  font-size: 1.6em;
+}
+
+#mainTable {
+  text-align: center;
+  margin: 0;
+}
+
+.sidebar {
+  text-align: right;
+}
+
+.sidebar img {
+  box-shadow: 2px 2px 10px;
+  margin: 2vh 0;
+  border-radius: 1vh;
+}
+
+
+
+#footer
+{
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  margin-top: 10vh;
+  text-align: center;
+  border-top: 2px solid rgba(0,0,0,0.5);
+}
